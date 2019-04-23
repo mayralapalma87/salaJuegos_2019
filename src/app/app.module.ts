@@ -3,27 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdivinaElNumeroComponent } from './adivina-el-numero/adivina-el-numero.component';
-import { AdivinaMasListadoComponent } from './adivina-mas-listado/adivina-mas-listado.component';
-import { AgiliadAritmeticaComponent } from './agiliad-aritmetica/agiliad-aritmetica.component';
-import { AgiliadMasListadoComponent } from './agiliad-mas-listado/agiliad-mas-listado.component';
-import { AnagramaComponent } from './anagrama/anagrama.component';
-import { CabeceraComponent } from './cabecera/cabecera.component';
-import { ErrorComponent } from './error/error.component';
-import { InputJugadoresComponent } from './input-jugadores/input-jugadores.component';
-import { JuegosComponent } from './juegos/juegos.component';
-import { JugadoresListadoComponent } from './jugadores-listado/jugadores-listado.component';
-import { ListadoComponent } from './listado/listado.component';
-import { ListadoDePaisesComponent } from './listado-de-paises/listado-de-paises.component';
-import { ListadoDeResultadosComponent } from './listado-de-resultados/listado-de-resultados.component';
-import { ListadosComponent } from './listados/listados.component';
-import { LoginComponent } from './login/login.component';
-import { MapaDeGoogleComponent } from './mapa-de-google/mapa-de-google.component';
-import { MenuComponent } from './menu/menu.component';
-import { MenuCardComponent } from './menu-card/menu-card.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { QuienSoyComponent } from './quien-soy/quien-soy.component';
-import { RegistroComponent } from './registro/registro.component';
+import { AdivinaElNumeroComponent } from '.componentes/adivina-el-numero/adivina-el-numero.component';
+import { AdivinaMasListadoComponent } from '.componentes/adivina-mas-listado/adivina-mas-listado.component';
+import { AgilidadAritmeticaComponent } from '.componentes/agilidad-aritmetica/agilidad-aritmetica.component';
+import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/agilidad-mas-listado.component';
+import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
+import { ErrorComponent } from './componentes/error/error.component';
+import { InputJugadoresComponent } from './componentes/input-jugadores/input-jugadores.component';
+import { JuegosComponent } from './componentes/juegos/juegos.component';
+import { JugadoresListadoComponent } from './componentes/jugadores-listado/jugadores-listado.component';
+import { ListadoComponent } from './componentes/listado/listado.component';
+import { ListadoDePaisesComponent } from './componentes/listado-de-paises/listado-de-paises.component';
+import { ListadoDeResultadosComponent } from './componentes/listado-de-resultados/listado-de-resultados.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { MapaDeGoogleComponent } from './componentes/mapa-de-google/mapa-de-google.component';
+import { MenuComponent } from './componentes/menu/menu.component';
+import { MenuCardComponent } from './componentes/menu-card/menu-card.component';
+import { PrincipalComponent } from './componentes/principal/principal.component';
+import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
+import { RegistroComponent } from './componentes/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +30,6 @@ import { RegistroComponent } from './registro/registro.component';
     AdivinaMasListadoComponent,
     AgiliadAritmeticaComponent,
     AgiliadMasListadoComponent,
-    AnagramaComponent,
     CabeceraComponent,
     ErrorComponent,
     InputJugadoresComponent,
@@ -41,7 +38,6 @@ import { RegistroComponent } from './registro/registro.component';
     ListadoComponent,
     ListadoDePaisesComponent,
     ListadoDeResultadosComponent,
-    ListadosComponent,
     LoginComponent,
     MapaDeGoogleComponent,
     MenuComponent,

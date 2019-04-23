@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-agiliad-aritmetica',
-  templateUrl: './agiliad-aritmetica.component.html',
-  styleUrls: ['./agiliad-aritmetica.component.css']
+  selector: 'app-agilidad-aritmetica',
+  templateUrl: './agilidad-aritmetica.component.html',
+  styleUrls: ['./agilidad-aritmetica.component.css']
 })
-export class AgiliadAritmeticaComponent implements OnInit {
+export class AgilidadAritmeticaComponent implements OnInit {
   @Output()
-  enviarJuego :EventEmitter<any>= new EventEmitter<any>();
-  nuevoJuego : JuegoAgilidad;
+  enviarJuego:EventEmitter<any>= new EventEmitter<any>();
+  nuevoJuego: JuegoAgilidad;
   ocultarVerificar: boolean;
   Tiempo: number;
   repetidor:any;

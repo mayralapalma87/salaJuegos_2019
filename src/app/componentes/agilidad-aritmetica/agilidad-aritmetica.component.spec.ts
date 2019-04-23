@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgiliadAritmeticaComponent } from './agiliad-aritmetica.component';
+import { AgiliadAritmeticaComponent } from './agilidad-aritmetica.component';
 
 describe('AgiliadAritmeticaComponent', () => {
   let component: AgiliadAritmeticaComponent;

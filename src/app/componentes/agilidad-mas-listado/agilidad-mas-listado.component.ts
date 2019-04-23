@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-agiliad-mas-listado',
-  templateUrl: './agiliad-mas-listado.component.html',
-  styleUrls: ['./agiliad-mas-listado.component.css']
+  selector: 'app-agilidad-mas-listado',
+  templateUrl: './agilidad-mas-listado.component.html',
+  styleUrls: ['./agilidad-mas-listado.component.css']
 })
-export class AgiliadMasListadoComponent implements OnInit {
+export class AgilidadMasListadoComponent implements OnInit {
   public listadoParaCompartir: Array<any>;
   constructor() { this.listadoParaCompartir = new Array<any>()}
 
