@@ -22,6 +22,7 @@ import { MenuCardComponent } from './componentes/menu-card/menu-card.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
