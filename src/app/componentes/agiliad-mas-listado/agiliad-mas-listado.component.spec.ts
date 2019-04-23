@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgilidadMasListadoComponent } from './agilidad-mas-listado.component';
+import { AgiliadMasListadoComponent } from './agiliad-mas-listado.component';
 
-describe('AgilidadMasListadoComponent', () => {
-  let component: AgilidadMasListadoComponent;
-  let fixture: ComponentFixture<AgilidadMasListadoComponent>;
+describe('AgiliadMasListadoComponent', () => {
+  let component: AgiliadMasListadoComponent;
+  let fixture: ComponentFixture<AgiliadMasListadoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AgilidadMasListadoComponent ]
+      declarations: [ AgiliadMasListadoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgilidadMasListadoComponent);
+    fixture = TestBed.createComponent(AgiliadMasListadoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

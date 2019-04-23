@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
+Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']

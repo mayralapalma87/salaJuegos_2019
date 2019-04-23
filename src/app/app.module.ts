@@ -3,10 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdivinaElNumeroComponent } from '.componentes/adivina-el-numero/adivina-el-numero.component';
-import { AdivinaMasListadoComponent } from '.componentes/adivina-mas-listado/adivina-mas-listado.component';
-import { AgilidadAritmeticaComponent } from '.componentes/agilidad-aritmetica/agilidad-aritmetica.component';
-import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/agilidad-mas-listado.component';
+import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
+import { AdivinaMasListadoComponent } from './componentes/adivina-mas-listado/adivina-mas-listado.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { ErrorComponent } from './componentes/error/error.component';
 import { InputJugadoresComponent } from './componentes/input-jugadores/input-jugadores.component';
@@ -22,7 +20,6 @@ import { MenuCardComponent } from './componentes/menu-card/menu-card.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [

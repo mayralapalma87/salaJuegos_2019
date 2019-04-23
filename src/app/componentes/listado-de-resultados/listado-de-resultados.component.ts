@@ -1,23 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
+Component({
   selector: 'app-listado-de-resultados',
   templateUrl: './listado-de-resultados.component.html',
   styleUrls: ['./listado-de-resultados.component.css']
-})
+});
 export class ListadoDeResultadosComponent implements OnInit {
-  @Input()
+  constructor() {}
   listado: Array<any>;
-
-
-   constructor() {
-    }
-
-   ngOnInit() {
-
-   }
+  Input(){}
+  ngOnInit() {}
 
    ver() {
+// tslint:disable-next-line: no-console
      console.info(this.listado);
    }
 
