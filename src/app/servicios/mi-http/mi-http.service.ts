@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,7 @@ export class MiHttpService {
   public httpGetO( url: string): Observable<Response> {
     return this.http.get( url )
       .map( ( res: Response ) => res.json())
+// tslint:disable-next-line: deprecation
       .catch( ( err: any ) => Observable.throw(err.json().error || 'Server error'));
   }
 

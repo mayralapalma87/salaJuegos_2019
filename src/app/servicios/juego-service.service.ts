@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { JuegoAdivina } from '../clases/juego-adivina';
 import { Juego } from '../clases/juego';
+import { MiHttpService } from './mi-http/mi-http.service';
 
 @Injectable({
   providedIn: 'root'

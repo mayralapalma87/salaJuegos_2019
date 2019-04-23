@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { MiHttpService } from './mi-http/mi-http.service';
 
 @Injectable({
   providedIn: 'root'
