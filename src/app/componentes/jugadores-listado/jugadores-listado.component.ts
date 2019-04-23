@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { JugadoresService } from 'salaJuegos/src/app/servicios/jugadores-service';
 Component({
   selector: 'app-jugadores-listado',
   templateUrl: './jugadores-listado.component.html',
@@ -15,11 +15,8 @@ export class JugadoresListadoComponent implements OnInit {
 
     }
 
-
-
   ngOnInit() {
   }
-
 
   TraerTodos() {
     // alert("totos");

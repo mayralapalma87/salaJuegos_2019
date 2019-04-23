@@ -20,14 +20,14 @@ import { MenuCardComponent } from './componentes/menu-card/menu-card.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
+import { AgilidadAritmeticaComponent } from './componentes/agilidad-aritmetica/agilidad-aritmetica.component';
+import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/agilidad-mas-listado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdivinaElNumeroComponent,
     AdivinaMasListadoComponent,
-    AgiliadAritmeticaComponent,
-    AgiliadMasListadoComponent,
     CabeceraComponent,
     ErrorComponent,
     InputJugadoresComponent,
@@ -42,7 +42,9 @@ import { RegistroComponent } from './componentes/registro/registro.component';
     MenuCardComponent,
     PrincipalComponent,
     QuienSoyComponent,
-    RegistroComponent
+    RegistroComponent,
+    AgilidadAritmeticaComponent,
+    AgilidadMasListadoComponent
   ],
   imports: [
     BrowserModule,

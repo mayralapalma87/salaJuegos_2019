@@ -1,11 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { JuegoAgilidad } from 'src/app/clases/juego-agilidad';
+import { JuegoAgilidad } from '../../clases/juego-agilidad';
 import { Subscription } from 'rxjs';
 
 Component({
-  selector: 'app-agiliad-aritmetica',
-  templateUrl: './agiliad-aritmetica.component.html',
-  styleUrls: ['./agiliad-aritmetica.component.css']
+  selector: 'app-agilidad-aritmetica',
+  templateUrl: './agilidad-aritmetica.component.html',
+  styleUrls: ['./agilidad-aritmetica.component.css']
 });
 
 export class AgilidadAritmeticaComponent implements OnInit {

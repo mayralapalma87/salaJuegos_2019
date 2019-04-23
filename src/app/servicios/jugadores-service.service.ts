@@ -15,14 +15,15 @@ export class JugadoresServiceService {
 
  filtrado: any;
 
-   traertodos(ruta: string, filtro: string)
-   {
+   traertodos(ruta: string, filtro: string) {
      return this.miHttp.traerJugadores(ruta).then(data => {
+// tslint:disable-next-line: no-console
        console.info('jugadores service', data);
 
        this.filtrado = data;
 
        let  ganador: boolean;
+// tslint:disable-next-line: triple-equals
        if (filtro == 'ganadores') {
          ganador = true;
        } else {
@@ -30,13 +31,13 @@ export class JugadoresServiceService {
        }
 
        this.filtrado = this.filtrado.filter(
-         data => data.gano === ganador  || filtro == 'todos' ); return this.filtrado;}
+// tslint:disable-next-line: no-shadowed-variable
+// tslint:disable-next-line: triple-equals
+         data => data.gano === ganador  || filtro == 'todos' ); return this.filtrado; }
        )
        .catch(errror => {console.log('error');
 
-
-
-                       return this.filtrado;
+                         return this.filtrado;
 
 
      });
