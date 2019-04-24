@@ -4,14 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
-//Services
+// Services
 import { MiHttpService } from './servicios/mi-http/mi-http.service';
 import { PaisesService } from './servicios/paises.service';
 import { JugadoresService } from './servicios/jugadores.service';
-import{ ArchivosJugadoresService} from './servicios/archivos-jugadores.service';
+import { ArchivosJugadoresService} from './servicios/archivos-jugadores.service';
 import { RuteandoModule } from './ruteando/ruteando.module';
-//Components
+import { JuegoServiceService } from './servicios/juego-service.service';
+
+// Components
 import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
 import { AdivinaMasListadoComponent } from './componentes/adivina-mas-listado/adivina-mas-listado.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
@@ -34,6 +37,7 @@ import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/
 import { AgmCoreModule } from '@agm/core';
 import { SexoPipe } from './pipes/sexo.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,18 +59,27 @@ import { SexoPipe } from './pipes/sexo.pipe';
     QuienSoyComponent,
     RegistroComponent,
     AgilidadAritmeticaComponent,
-    AgilidadMasListadoComponent
+    AgilidadMasListadoComponent,
+    RegistroComponent,
+    MenuCardComponent,
+    CabeceraComponent,
+    QuienSoyComponent,
+    ListadoDePaisesComponent,
+    MapaDeGoogleComponent,
+    JugadoresListadoComponent,
+    InputJugadoresComponent,
+    SexoPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RuteandoModule,
-    HttpClient,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
     })
   ],
-  providers: [],
+  providers: [ JuegoServiceService, MiHttpService, PaisesService, ArchivosJugadoresService, JugadoresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
