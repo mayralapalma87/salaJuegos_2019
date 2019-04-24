@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { PaisesService } from 'src/app/servicios/paises.service';
 
-Component({
+@Component({
   selector: 'app-listado-de-paises',
   templateUrl: './listado-de-paises.component.html',
   styleUrls: ['./listado-de-paises.component.css']
-});
+})
 export class ListadoDePaisesComponent implements OnInit {
   public listadoDePaises: Array<any>;
   miServicioDePaises: PaisesService;

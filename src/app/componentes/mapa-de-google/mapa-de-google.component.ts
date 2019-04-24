@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-Component({
+@Component({
   selector: 'app-mapa-de-google',
   templateUrl: './mapa-de-google.component.html',
   styleUrls: ['./mapa-de-google.component.css']

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-Component({
+@Component({
   selector: 'app-menu-card',
   templateUrl: './menu-card.component.html',
   styleUrls: ['./menu-card.component.css']
-});
+})
 export class MenuCardComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private router: Router) { }

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { JuegoServiceService } from 'src/app/servicios/juego-service.service';
 
-Component({
+@Component({
   selector: 'app-listado',
   templateUrl: './listado.component.html',
   styleUrls: ['./listado.component.css']
-});
+})
+
 export class ListadoComponent implements OnInit {
   public listadoParaCompartir: Array<any>;
   miServicioJuego: JuegoServiceService;

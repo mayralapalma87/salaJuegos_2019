@@ -1,11 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { JuegoAdivina } from 'src/app/clases/juego-adivina';
 
-Component({
+@Component({
   selector: 'app-adivina-el-numero',
   templateUrl: './adivina-el-numero.component.html',
   styleUrls: ['./adivina-el-numero.component.css']
-});
+})
 
 export class AdivinaElNumeroComponent implements OnInit {
   @Output() enviarJuego: EventEmitter<any> = new EventEmitter<any>();

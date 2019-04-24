@@ -3,11 +3,11 @@ import { Subscription, from } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, of, timer } from 'rxjs';
 
-Component({
+@Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
-});
+})
 export class LoginComponent implements OnInit {
 
   private subscription: Subscription;
