@@ -31,6 +31,8 @@ import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { AgilidadAritmeticaComponent } from './componentes/agilidad-aritmetica/agilidad-aritmetica.component';
 import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/agilidad-mas-listado.component';
+import { AgmCoreModule } from '@agm/core';
+import { SexoPipe } from './pipes/sexo.pipe';
 
 @NgModule({
   declarations: [
@@ -57,29 +59,12 @@ import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-  ],
-  entryComponents: [
-    AppComponent,
-    AdivinaElNumeroComponent,
-    AdivinaMasListadoComponent,
-    CabeceraComponent,
-    ErrorComponent,
-    InputJugadoresComponent,
-    JuegosComponent,
-    JugadoresListadoComponent,
-    ListadoComponent,
-    ListadoDePaisesComponent,
-    ListadoDeResultadosComponent,
-    LoginComponent,
-    MapaDeGoogleComponent,
-    MenuComponent,
-    MenuCardComponent,
-    PrincipalComponent,
-    QuienSoyComponent,
-    RegistroComponent,
-    AgilidadAritmeticaComponent,
-    AgilidadMasListadoComponent
+    FormsModule,
+    RuteandoModule,
+    HttpClient,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
