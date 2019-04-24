@@ -1,8 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+//Services
+import { MiHttpService } from './servicios/mi-http/mi-http.service';
+import { PaisesService } from './servicios/paises.service';
+import { JugadoresService } from './servicios/jugadores.service';
+import{ ArchivosJugadoresService} from './servicios/archivos-jugadores.service';
+import { RuteandoModule } from './ruteando/ruteando.module';
+//Components
 import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
 import { AdivinaMasListadoComponent } from './componentes/adivina-mas-listado/adivina-mas-listado.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
@@ -48,7 +57,29 @@ import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+  ],
+  entryComponents: [
+    AppComponent,
+    AdivinaElNumeroComponent,
+    AdivinaMasListadoComponent,
+    CabeceraComponent,
+    ErrorComponent,
+    InputJugadoresComponent,
+    JuegosComponent,
+    JugadoresListadoComponent,
+    ListadoComponent,
+    ListadoDePaisesComponent,
+    ListadoDeResultadosComponent,
+    LoginComponent,
+    MapaDeGoogleComponent,
+    MenuComponent,
+    MenuCardComponent,
+    PrincipalComponent,
+    QuienSoyComponent,
+    RegistroComponent,
+    AgilidadAritmeticaComponent,
+    AgilidadMasListadoComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

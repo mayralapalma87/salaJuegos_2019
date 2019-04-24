@@ -5,7 +5,7 @@ import { SexoPipe } from './sexo.pipe';
 
 describe('Pipe: Sexoe', () => {
   it('create an instance', () => {
-    let pipe = new SexoPipe();
+    const pipe = new SexoPipe();
     expect(pipe).toBeTruthy();
   });
 });
