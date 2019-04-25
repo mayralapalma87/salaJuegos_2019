@@ -9,6 +9,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // Services
 import { MiHttpService } from './servicios/mi-http/mi-http.service';
@@ -75,6 +76,7 @@ import { SexoPipe } from './pipes/sexo.pipe';
     SexoPipe
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     FormsModule,
     RuteandoModule,
