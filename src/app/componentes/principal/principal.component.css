@@ -1,0 +1,97 @@
+body{
+    padding-top:4.2rem;
+    padding-bottom:4.2rem;
+    background:rgba(0, 0, 0, 0.76);
+    background-image: url('src/assets/imagenes/maquina-tragamonedas.jpg');
+    background-size: 100% 100%;
+}
+.pt-100{
+    padding-top:100px;
+}
+.pb-100{
+    padding-top:100px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+.section-title p {
+	font-size: 46px;
+	font-family: Oleo Script;
+	margin-bottom: 0px;
+	margin-top:50px;
+}
+.section-title h4 {
+	font-size: 40px;
+	text-transform: capitalize;
+	color: #FF5E18;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 25px;
+}
+.section-title h4::before {
+	width: 80px;
+	height: 1.5px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4::before, .section-title h4::after {
+	position: absolute;
+	content: "";
+	background-color: #FF5E18;
+}
+.list-group-item  img
+ {
+    width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	border: 1px solid #ddd;
+	padding: 3px;
+	border-radius: 50%;
+    transition: .4s;
+}
+.menu_style1 .list-group-item  img
+ {
+	position: static;
+	display: block;
+	margin: 0 auto;
+    margin-bottom: 45px;
+    width: 30px;
+	height: 30px;
+}
+.list-group-item  h4 {
+	font-size: 20px;
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+    margin-bottom: 10px;
+    color: #FF5E18;
+	font-style: italic;
+}
+.list-group-item  h4 span {
+	float: right;
+	font-weight: bold;
+	color: #FF5E18;
+	font-style: italic;
+}
+p {
+	font-weight: 300;
+    font-size: 14px;
+    font-weight: bold;
+	color: #FF5E18;
+	font-style: italic;
+}
+.menu_style1 .list-group-item  {
+    text-align: center;
+}
+.list-group-item :hover img
+ {
+	border-radius: 0;
+	transition: .4s;
+}
+.media-heading
+{
+    color: #FF5E18;
+	font-style: italic;
+}

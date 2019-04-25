@@ -1,28 +1,105 @@
 <app-cabecera>  </app-cabecera>
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+
+
+<body>
+    <section class="about-area pt-60">
+   <div class="container">
+      <div class="row">
+         <div class="col-xl-12 mb-60">
+            <div class="section-title text-center">
+                <p>Menú</p>
+                <h4>Principal</h4>
+            </div>
+         </div>
+      </div>
+      <div class="row menu_style1">
+         <div class="col-md-4">
+            <div class="single_menu_list">
+                <a routerLink="/Juegos">
+                <img src="./assets/imagenes/pac-man-linea.png" class="media-object imagenDeMenu" >
+                </a>
+               <div class="menu_content">
+                  <h4 class="media-heading">Juegos</h4>
+                  <p>El método lúdico es un conjunto de estrategias diseñadas para crear un ambiente de armonía en los estudiantes que están inmersos en el proceso de aprendizaje. Este método busca que los alumnos se apropien de los temas impartidos por los docentes utilizando el juego.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="single_menu_list">
+              <a routerLink="/Listado">
+               <img src="./assets/imagenes/Pacman1-icon.ico" alt="">
+              </a>
+               <div class="menu_content">
+                  <h4 class="media-heading">Listados de resultados</h4>
+                  <p>Los listados de los resultados con ordenamiento y busqueda</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="single_menu_list">
+                <a routerLink="/Jugadores">
+               <img src="./assets/imagenes/Pacman4-icon.png" alt="">
+              </a>
+               <div class="menu_content">
+                  <h4 class="media-heading">Jugadores</h4>
+                <p>Listado de jugadores</p>
+               </div>
+            </div>
+         </div>
+        <!--  <div class="col-md-4">
+            <div class="single_menu_list">
+              <a routerLink="/Listado">
+               <img src="./assets/imagenes/Pacman3-icon.ico" alt="">
+              </a>
+               <div class="menu_content">
+                  <h4 class="media-heading">Configuraci&oacute;n</h4>
+                  <p>Ajustes de la aplicacion y los métodos de autentificación</p>
+               </div>
+            </div>
+         </div> -->
+       
+      </div>
+      <div class="row pb-60">
+         <div class="col-xl-12 text-center">
+            <div class="box_btn">
+               <a href="#">load more</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+</body>
 
 
 
-<div class="container" >
-
+<!-- 
+<body>
+<div class="container row">
+    <div class="row">
+        <div class="col-xl-12 mb-60">
+           <div class="section-title text-center">
+              <p>Menú</p>
+              <h4>Principal</h4>
+           </div>
+        </div>
+     </div>
+     
     <ul class="list-group">
-        <li class="list-group-item list-group-item-danger">
-
-                <div class="media-body">
-                    <div class="hero-text">
-                        <h4 >Menú Principal</h4>
-                    </div>
-                 </div>
-
-
-          </li>
         <li class="list-group-item list-group-item-success">
           <a routerLink="/Juegos">
             <div class="media">
               <div class="media-left">
-                    <img src="./assets/imagenes/saladejuegos.png" class="media-object imagenDeMenu" >
+                    <img src="./assets/imagenes/games-small.jpg" class="media-object imagenDeMenu" >
               </div>
-              <div class="media-body">
+              <div class="col-md-4">
                 <h4 class="media-heading">Juegos</h4>
                 <p>El método lúdico es un conjunto de estrategias diseñadas para crear un ambiente de armonía en los estudiantes que están inmersos en el proceso de aprendizaje. Este método busca que los alumnos se apropien de los temas impartidos por los docentes utilizando el juego.</p>
               </div>
@@ -36,7 +113,7 @@
                   <div class="media-left">
                       <img src="./assets/imagenes/listado.jpg" class="media-object imagenDeMenu" >
                     </div>
-                <div class="media-body">
+                <div class="col-md-4">
                   <h4 class="media-heading">Listados de resultados</h4>
                   <p>Los listados de los resultados con ordenamiento y busqueda</p>
                 </div>
@@ -50,7 +127,7 @@
                 <div class="media-left">
                     <img src="./assets/imagenes/Configuracion.png" class="media-object imagenDeMenu" >
                   </div>
-              <div class="media-body">
+              <div class="col-md-4">
                 <h4 class="media-heading">Configuraci&oacute;n</h4>
                 <p>Ajustes de la aplicacion y los métodos de autentificación</p>
               </div>
@@ -64,7 +141,7 @@
                 <div class="media-left">
                     <img src="./assets/imagenes/jugadores.png" class="media-object imagenDeMenu" >
                   </div>
-              <div class="media-body">
+              <div class="col-md-4">
                 <h4 class="media-heading">Jugadores</h4>
                 <p>Listado de jugadores</p>
               </div>
@@ -72,7 +149,7 @@
             </div>
           </a>
         </li>
-
-
       </ul>
 </div>
+</body>
+ -->
