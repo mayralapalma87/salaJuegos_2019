@@ -10,6 +10,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 // Services
 import { MiHttpService } from './servicios/mi-http/mi-http.service';
@@ -41,6 +43,7 @@ import { AgilidadAritmeticaComponent } from './componentes/agilidad-aritmetica/a
 import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/agilidad-mas-listado.component';
 import { AgmCoreModule } from '@agm/core';
 import { SexoPipe } from './pipes/sexo.pipe';
+import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijeras/priedra-papel-tijeras.component';
 
 
 @NgModule({
@@ -73,11 +76,13 @@ import { SexoPipe } from './pipes/sexo.pipe';
     MapaDeGoogleComponent,
     JugadoresListadoComponent,
     InputJugadoresComponent,
+    PriedraPapelTijerasComponent,
     SexoPipe
   ],
   imports: [
     NgbModule,
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     RuteandoModule,
     HttpClientModule,
@@ -85,6 +90,8 @@ import { SexoPipe } from './pipes/sexo.pipe';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
+    MatButtonModule,
+    MatCheckboxModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
     })

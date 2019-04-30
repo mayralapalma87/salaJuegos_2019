@@ -28,19 +28,22 @@ export class LoginComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-  }
+ngOnInit() {
+}
 
-  Entrar() {
-    if (this.usuario === 'admin' && this.clave === 'admin') {
-      this.router.navigate(['/Principal']);
-    }
+Entrar() {
+  if (this.usuario === 'admin' && this.clave === 'admin') {
+    this.router.navigate(['/Principal']);
   }
-  MoverBarraDeProgreso() {
-
+}
+volverAlHome() {
+    this.router.navigate(['/Principal']);
+}
+MoverBarraDeProgreso() {
     this.logeando = false;
     this.clase = 'progress-bar progress-bar-danger progress-bar-striped active';
     this.progresoMensaje = 'NSA spy...';
+// tslint:disable-next-line: no-shadowed-variable
     const timer = Observable.create(200, 50);
     this.subscription = timer.subscribe(t => {
       console.log('inicio');
@@ -55,9 +58,17 @@ export class LoginComponent implements OnInit {
           this.clase = 'progress-bar progress-bar-Info progress-bar-striped active';
           this.progresoMensaje = 'Adjustando encriptación..';
           break;
-          case 60:
+          case 40:
           this.clase = 'progress-bar progress-bar-success progress-bar-striped active';
           this.progresoMensaje = 'Recompilando Info del dispositivo..';
+          break;
+          case 50:
+          this.clase = 'progress-bar progress-bar-success progress-bar-striped active';
+          this.progresoMensaje = 'Borrando disco C..';
+          break;
+          case 55:
+          this.clase = 'progress-bar progress-bar-success progress-bar-striped active';
+          this.progresoMensaje = 'Era mentira pero te asustaste..';
           break;
           case 75:
           this.clase = 'progress-bar progress-bar-success progress-bar-striped active';
@@ -67,7 +78,6 @@ export class LoginComponent implements OnInit {
           this.clase = 'progress-bar progress-bar-success progress-bar-striped active';
           this.progresoMensaje = 'Instalando KeyLogger..';
           break;
-
         case 100:
           console.log('final');
           this.subscription.unsubscribe();
