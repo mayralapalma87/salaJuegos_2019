@@ -26,10 +26,10 @@ export class MenuComponent implements OnInit {
           this.router.navigate(['/AdivinaMasListado']);
           break;
       case 'AgilidadaMasListado':
-          this.router.navigate(['/AgilidadaMasListado']);
+          this.router.navigate(['/priedra-papel-tijeras.component']);
           break;
       case 'piedraPapelyTijeras':
-          this.router.navigate(['/AgilidadaMasListado']);
+          this.router.navigate(['/priedra-papel-tijeras.component']);
           break;
     }
   }

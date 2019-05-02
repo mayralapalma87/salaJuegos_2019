@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,10 +8,11 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatRippleModule} from '@angular/material';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {CommonModule} from '@angular/common';
 
 // Services
 import { MiHttpService } from './servicios/mi-http/mi-http.service';
@@ -81,7 +81,6 @@ import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijera
     SexoPipe
   ],
   imports: [
-    NgbModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -94,10 +93,12 @@ import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijera
     MatButtonModule,
     MatCheckboxModule,
     MatRippleModule,
+    CommonModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
     })
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [ JuegoServiceService, MiHttpService, PaisesService, ArchivosJugadoresService, JugadoresService],
   bootstrap: [AppComponent]
