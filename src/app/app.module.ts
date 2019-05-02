@@ -12,6 +12,7 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatRippleModule} from '@angular/material';
 
 // Services
 import { MiHttpService } from './servicios/mi-http/mi-http.service';
@@ -92,6 +93,7 @@ import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijera
     ModalModule.forRoot(),
     MatButtonModule,
     MatCheckboxModule,
+    MatRippleModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
     })
