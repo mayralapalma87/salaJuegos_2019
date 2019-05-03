@@ -16,6 +16,9 @@ export class MenuComponent implements OnInit {
 
   Juego(tipo: string) {
     switch (tipo) {
+      case 'Anagrama':
+          this.router.navigate(['/Adivina']);
+          break;
       case 'Adivina':
           this.router.navigate(['/Adivina']);
           break;
@@ -26,11 +29,17 @@ export class MenuComponent implements OnInit {
           this.router.navigate(['/AdivinaMasListado']);
           break;
       case 'AgilidadaMasListado':
-          this.router.navigate(['/priedra-papel-tijeras.component']);
+          this.router.navigate(['/priedra-papel-tijeras']);
           break;
       case 'piedraPapelyTijeras':
-          this.router.navigate(['/priedra-papel-tijeras.component']);
+          this.router.navigate(['/priedra-papel-tijeras']);
           break;
+      case 'tateti':
+      this.router.navigate(['/priedra-papel-tijeras.component']);
+      break;
+      case 'memente':
+      this.router.navigate(['/priedra-papel-tijeras.component']);
+      break;
     }
   }
 
