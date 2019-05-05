@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -32,13 +33,13 @@ export class MenuComponent implements OnInit {
           this.router.navigate(['/AgilidadaMasListado']);
           break;
       case 'piedraPapelyTijeras':
-          this.router.navigate(['/priedra-papel-tijeras']);
+          this.router.navigate(['/PriedraPapelTijeras']);
           break;
       case 'tateti':
-          this.router.navigate(['/tateti']);
+          this.router.navigate(['/Tateti']);
           break;
       case 'memente':
-          this.router.navigate(['/memente']);
+          this.router.navigate(['/Memente']);
           break;
     }
   }

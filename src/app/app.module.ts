@@ -8,11 +8,11 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import {MatRippleModule} from '@angular/material';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { MatRippleModule} from '@angular/material';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { CommonModule} from '@angular/common';
 
 // Services
 import { MiHttpService } from './servicios/mi-http/mi-http.service';
@@ -47,7 +47,7 @@ import { SexoPipe } from './pipes/sexo.pipe';
 import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijeras/priedra-papel-tijeras.component';
 import { TatetiComponent } from './componentes/tateti/tateti.component';
 import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
-
+import { MementeComponent } from './componentes/Memente/Memente.component';
 
 @NgModule({
    declarations: [
@@ -82,6 +82,7 @@ import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
       PriedraPapelTijerasComponent,
       TatetiComponent,
       AnagramaComponent,
+      MementeComponent,
       SexoPipe
    ],
    imports: [

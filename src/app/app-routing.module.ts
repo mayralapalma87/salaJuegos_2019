@@ -22,7 +22,7 @@ import { JugadoresListadoComponent } from './componentes/jugadores-listado/jugad
 import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijeras/priedra-papel-tijeras.component';
 import { TatetiComponent } from './componentes/tateti/tateti.component';
 import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
-
+import { MementeComponent } from './componentes/Memente/Memente.component';
 
 // declaro donde quiero que se dirija
 const MiRuteo = [
@@ -35,21 +35,23 @@ const MiRuteo = [
 {path: 'Principal' , component: PrincipalComponent},
 {path: 'Listado' , component: ListadoComponent},
 {path: 'Paises' , component: ListadoDePaisesComponent},
+{path: 'Adivina' , component: AdivinaElNumeroComponent},
+{path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
+{path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
+{path: 'Agilidad' , component: AgilidadAritmeticaComponent},
+{path: 'Anagrama' , component: AnagramaComponent},
+{path: 'PriedraPapelTijeras' , component: PriedraPapelTijerasComponent},
+{path: 'Tateti' , component: TatetiComponent},
+{path: 'Memente' , component: MementeComponent},
 
 { path: 'Juegos' ,
-component: JuegosComponent ,
+component: JuegosComponent,
 children:
-     [{path: '' , component: MenuCardComponent},
-     {path: 'Adivina' , component: AdivinaElNumeroComponent},
-      {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
-      {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
-      {path: 'Agilidad' , component: AgilidadAritmeticaComponent},
-      {path: 'Anagrama' , component: AnagramaComponent},
-      {path: 'priedra-papel-tijeras' , component: PriedraPapelTijerasComponent},
-      {path: 'tateti' , component: TatetiComponent}]
+     [{path: '' , component: MenuCardComponent}]
 },
 {path: '**' , component: ErrorComponent},
 {path: 'error' , component: ErrorComponent}];
+
 const routes: Routes = [];
 
 @NgModule({
