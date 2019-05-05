@@ -44,10 +44,10 @@ import { AgilidadAritmeticaComponent } from './componentes/agilidad-aritmetica/a
 import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/agilidad-mas-listado.component';
 import { AgmCoreModule } from '@agm/core';
 import { SexoPipe } from './pipes/sexo.pipe';
-import { PriedraPapelTijerasComponent } from './componentes/priedra-papel-tijeras/priedra-papel-tijeras.component';
 import { TatetiComponent } from './componentes/tateti/tateti.component';
 import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
 import { MementeComponent } from './componentes/Memente/Memente.component';
+import { PriedraPapelTijerasComponent } from './componentes/PriedraPapelTijeras/PriedraPapelTijeras.component';
 
 @NgModule({
    declarations: [

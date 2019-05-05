@@ -32,13 +32,13 @@ export class MenuComponent implements OnInit {
       case 'AgilidadaMasListado':
           this.router.navigate(['/AgilidadaMasListado']);
           break;
-      case 'piedraPapelyTijeras':
+      case 'PriedraPapelTijeras':
           this.router.navigate(['/PriedraPapelTijeras']);
           break;
-      case 'tateti':
+      case 'Tateti':
           this.router.navigate(['/Tateti']);
           break;
-      case 'memente':
+      case 'Memente':
           this.router.navigate(['/Memente']);
           break;
     }

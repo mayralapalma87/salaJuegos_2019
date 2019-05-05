@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-priedra-papel-tijeras',
-  templateUrl: './priedra-papel-tijeras.component.html',
-  styleUrls: ['./priedra-papel-tijeras.component.css']
+  selector: 'app-PriedraPapelTijeras',
+  templateUrl: './PriedraPapelTijeras.component.html',
+  styleUrls: ['./PriedraPapelTijeras.component.css']
 })
 export class PriedraPapelTijerasComponent implements OnInit {
 
   constructor() { }
-// tslint:disable-next-line: member-ordering
+
+  // tslint:disable-next-line: member-ordering
   scores = [0 , 0]; // store the scores. index 0 is you. index 1 is player 2.
 // tslint:disable-next-line: member-ordering
   weapons = [
