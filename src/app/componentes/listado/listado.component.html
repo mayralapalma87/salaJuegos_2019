@@ -1,9 +1,53 @@
-<ul class="nav nav-pills nav-justified">
-  <li class="active"><a routerLink="/Principal">Sala de Juegos</a></li>
-  <li><a (click)="llamaService()">Servicio</a></li>
-  <li><a (click)="llamaServicePromesa()">Serv Promesa</a></li>
-  <li><a (click)="llamaServicePromesa()">Serv observable</a></li>
-</ul>
 
+  <!-- <ul class="list-group nav nav-pills nav-justified">
+    <li class="navnav-item active"><a routerLink="/Principal">Sala de Juegos</a></li>
+    <li class="nav-item"><a (click)="llamaService()">Servicio</a></li>
+    <li class="nav-item"><a (click)="llamaServicePromesa()">Serv Promesa</a></li>
+    <li class="nav-item"><a (click)="llamaServicePromesa()">Serv observable</a></li>
+  </ul> -->
+  <section id="our_menu" class="pt-5 pb-5">
+      <div class="container">
+  <div class="row">
+      <div class="tab-content col-lg-12" id="myTabContent">
+        <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="single_menu">
+                <img src="../assets/imagenes/pacman-ghost.gif" routerLink="/Principal" alt="Principal">
+                <div class="menu_content">
+                  <h4><a data-toggle="tooltip" title="Sala de Juegos Listado">Sala de Juegos</a></h4>
+                  <p>Volver al home</p>
+                </div>
+              </div>
+              <div class="single_menu">
+                <img src="../assets/imagenes/pacman-ghost.gif" (click)="llamaService()" alt="Servicio">
+                <div class="menu_content">
+                  <h4>Servicio</h4>
+                  <p>Llama al servicio</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="single_menu">
+                  <img src="../assets/imagenes/pacman-ghost.gif" (click)="llamaServicePromesa()" alt="ServPromesa">
+                  <div class="menu_content">
+                    <h4>Serv Promesa</h4>
+                      <p>Llama al servicio promesa</p>
+                  </div>
+              </div>
+              <div class="single_menu">
+                <img src="../assets/imagenes/pacman-ghost.gif" (click)="llamaServicePromesa()" alt="ServObservable">
+                <div class="menu_content">
+                  <h4>Serv observable</h4>
+                  <p>Llama al servicio observable</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <app-listado-de-resultados [listado]="listadoParaCompartir"> </app-listado-de-resultados>
 

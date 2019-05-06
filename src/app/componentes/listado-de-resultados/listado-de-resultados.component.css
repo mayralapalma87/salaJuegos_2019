@@ -1,0 +1,10 @@
+table{
+  color: #e74c3c;
+}
+section{
+  padding-top:2.2rem;
+  padding-bottom:2.2rem;
+  background:rgba(0, 0, 0, 0.76);
+  background-image: url('src/assets/imagenes/bricks-back-black.jpg');
+  background-size: 100% 100%;
+}
