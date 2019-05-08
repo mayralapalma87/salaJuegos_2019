@@ -11,4 +11,5 @@ export class AnagramaComponent implements OnInit {
 
   ngOnInit() {
   }
+
 }

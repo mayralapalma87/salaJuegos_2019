@@ -6,19 +6,22 @@ import { JuegoAdivina } from 'src/app/clases/juego-adivina';
   templateUrl: './adivina.component.html',
   styleUrls: ['./adivina.component.css']
 })
+
 export class AdivinaComponent implements OnInit {
+  constructor() {
+    this.nuevoJuego = new JuegoAdivina();
+    // tslint:disable-next-line: no-console
+    console.info('numero Secreto:', this.nuevoJuego.numeroSecreto);
+    this.ocultarVerificar = false;
+  }
+
   @Output() enviarJuego: EventEmitter<any> = new EventEmitter<any>();
+
   nuevoJuego: JuegoAdivina;
   Mensajes: string;
   contador: number;
   ocultarVerificar: boolean;
 
-  constructor() {
-    this.nuevoJuego = new JuegoAdivina();
-// tslint:disable-next-line: no-console
-    console.info('numero Secreto:', this.nuevoJuego.numeroSecreto);
-    this.ocultarVerificar = false;
-  }
   generarnumero() {
     this.nuevoJuego.generarnumero();
     this.contador = 0;
@@ -71,22 +74,22 @@ export class AdivinaComponent implements OnInit {
 
   MostarMensaje(mensaje: string= 'este es el mensaje', ganador: boolean= false) {
     this.Mensajes = mensaje;
-    const x = document.getElementById('snackbar');
+    var x = document.getElementById('snackbar');
     if (ganador) {
         x.className = 'show Ganador';
       } else {
         x.className = 'show Perdedor';
       }
-    const modelo = this;
+    var modelo = this;
 // tslint:disable-next-line: only-arrow-functions
-    setTimeout( function() {
+    setTimeout(function() {
       x.className = x.className.replace('show', '');
       modelo.ocultarVerificar = false;
      }, 3000);
 // tslint:disable-next-line: no-console
     console.info('objeto', x);
 
-    }
-    ngOnInit() {
+  }
+  ngOnInit() {
   }
 }

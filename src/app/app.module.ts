@@ -44,17 +44,18 @@ import { AgilidadMasListadoComponent } from './componentes/agilidad-mas-listado/
 import { AgmCoreModule } from '@agm/core';
 import { SexoPipe } from './pipes/sexo.pipe';
 import { TatetiComponent } from './componentes/tateti/tateti.component';
-import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
 import { MementeComponent } from './componentes/Memente/Memente.component';
 import { PriedraPapelTijerasComponent } from './componentes/PriedraPapelTijeras/PriedraPapelTijeras.component';
-import { AdivinaComponent } from './componentes/adivina/adivina.component';
 import { AdivinaMasListadoComponent } from './componentes/adivina-mas-listado/adivina-mas-listado.component';
+import { AdivinaComponent } from './componentes/adivina/adivina.component';
+import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
 
 @NgModule({
    declarations: [
       AppComponent,
       AdivinaComponent,
       AdivinaMasListadoComponent,
+      AnagramaComponent,
       CabeceraComponent,
       ErrorComponent,
       InputJugadoresComponent,
@@ -82,7 +83,6 @@ import { AdivinaMasListadoComponent } from './componentes/adivina-mas-listado/ad
       InputJugadoresComponent,
       PriedraPapelTijerasComponent,
       TatetiComponent,
-      AnagramaComponent,
       MementeComponent,
       SexoPipe
    ],
