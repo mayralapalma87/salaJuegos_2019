@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { AdivinaMasListadoComponent } from './adivina-mas-listado.component';
+import { AdivinaComponent } from './adivina.component';
 
-describe('AdivinaMasListadoComponent', () => {
-  let component: AdivinaMasListadoComponent;
-  let fixture: ComponentFixture<AdivinaMasListadoComponent>;
+describe('AdivinaComponent', () => {
+  let component: AdivinaComponent;
+  let fixture: ComponentFixture<AdivinaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdivinaMasListadoComponent ]
+      declarations: [ AdivinaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdivinaMasListadoComponent);
+    fixture = TestBed.createComponent(AdivinaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

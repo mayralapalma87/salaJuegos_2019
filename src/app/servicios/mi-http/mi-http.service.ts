@@ -33,7 +33,13 @@ export class MiHttpService {
     );
       // catch ( ( err: any ) => Observable.throw(err.json().error || 'Server error'); ))
   }
-
+  public login(username: string, password: string) {
+    return this.http.post('https://reqres.in/api/login',
+                          {
+                            email: username,
+                            password: password
+                          });
+  }
 
   private extractData( res: Response ) {
     return res.json() || {};

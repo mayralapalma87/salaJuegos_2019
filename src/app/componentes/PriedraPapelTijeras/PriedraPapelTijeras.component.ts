@@ -13,9 +13,9 @@ export class PriedraPapelTijerasComponent implements OnInit {
   scores = [0 , 0]; // store the scores. index 0 is you. index 1 is player 2.
 // tslint:disable-next-line: member-ordering
   weapons = [
-    'rock',
-    'paper',
-    'scissors'
+    'Piedra',
+    'Papel',
+    'Tijeras'
   ];
   playerSelected = -1;
   enemySelected  = -1;

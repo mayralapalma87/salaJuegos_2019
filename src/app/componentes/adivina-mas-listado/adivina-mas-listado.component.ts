@@ -6,16 +6,16 @@ import { Juego } from 'src/app/clases/juego';
   templateUrl: './adivina-mas-listado.component.html',
   styleUrls: ['./adivina-mas-listado.component.css']
 })
-
 export class AdivinaMasListadoComponent implements OnInit {
   public listadoParaCompartir: Array<any>;
   constructor() { this.listadoParaCompartir = new Array<any>(); }
 
-  ngOnInit() {
-  }
-   tomarJuegoTerminado(juego: Juego) {
-    this.listadoParaCompartir.push(juego);
-   // console.info("en app",this.listadoParaCompartir);
-  }
+tomarJuegoTerminado(juego: Juego) {
+  this.listadoParaCompartir.push(juego);
+  // console.info("en app",this.listadoParaCompartir);
+}
+
+ngOnInit() {
+}
 
 }
