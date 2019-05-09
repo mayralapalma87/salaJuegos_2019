@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<app-navJuegos></app-navJuegos>
 <body>
-  <div class="container-fluid text-center">
+  <div id="principal" class="container-fluid text-center">
     <div class="card-header">
       <h1>
         {{nuevoJuego.nombre}}!
@@ -20,10 +20,10 @@
       <div class="form-group">
         <h2 [hidden]="ocultarVerificar">
           <button *ngIf="nuevoJuego.numeroSecreto!=0" (click)="verificar()"
-            class="btn btn-success btn-lg">Verificar</button>
+            class="btn">Verificar</button>
           </h2>
         <h2>
-          <button type="button" *ngIf="nuevoJuego.numeroSecreto==0 " (click)="generarnumero()">Nuevo número secreto</button>
+          <button class="btn" type="button" *ngIf="nuevoJuego.numeroSecreto==0 " (click)="generarnumero()">Nuevo número secreto</button>
           </h2>
       </div>
       <div class="form-group">

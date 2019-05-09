@@ -60,3 +60,15 @@ h1::after {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+.principal{
+  background-color:  rgb(128, 0, 64, 0.8);
+  color: #FF5E18;
+}
