@@ -22,6 +22,7 @@ import { JugadoresService } from './servicios/jugadores.service';
 import { ArchivosJugadoresService} from './servicios/archivos-jugadores.service';
 import { RuteandoModule } from './ruteando/ruteando.module';
 import { JuegoServiceService } from './servicios/juego-service.service';
+import { LoginService } from './servicios/login.service';
 
 // Components
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
@@ -50,6 +51,7 @@ import { AdivinaMasListadoComponent } from './componentes/adivina-mas-listado/ad
 import { AdivinaComponent } from './componentes/adivina/adivina.component';
 import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
 import { NavJuegosComponent } from './componentes/navJuegos/navJuegos.component';
+
 
 @NgModule({
    declarations: [
@@ -109,7 +111,7 @@ import { NavJuegosComponent } from './componentes/navJuegos/navJuegos.component'
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
-  providers: [ JuegoServiceService, MiHttpService, PaisesService, ArchivosJugadoresService, JugadoresService],
+  providers: [ JuegoServiceService, MiHttpService, PaisesService, ArchivosJugadoresService, JugadoresService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

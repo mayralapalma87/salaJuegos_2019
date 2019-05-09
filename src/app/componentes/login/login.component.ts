@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Subscription, from } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, of, timer } from 'rxjs';
+import { LoginService } from 'src/app/servicios/login.service';
+
 
 @Component({
   selector: 'app-login',
@@ -22,19 +24,32 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private loginService: LoginService,
     private router: Router) {
       this.progreso = 0;
       this.ProgresoDeAncho = '0%';
-
   }
 
 ngOnInit() {
 }
-
 Entrar() {
   if (this.usuario === 'admin' && this.clave === 'admin') {
     this.router.navigate(['/Principal']);
-  }
+  } else {
+       // tslint:disable-next-line: deprecation
+       event.preventDefault(); // Avoid default action for the submit button of the login form
+
+      // Calls service to login user to the api rest
+       this.loginService.login(this.usuario, this.clave).subscribe(
+        res => {
+         console.log(res);
+        },
+        error => {
+          console.error(error);
+        },
+        () => this.router.navigateByUrl('/Principal')
+      );
+    }
 }
 volverAlHome() {
     this.router.navigate(['/Principal']);
@@ -85,7 +100,5 @@ MoverBarraDeProgreso() {
           break;
       }
     });
-
   }
-
 }

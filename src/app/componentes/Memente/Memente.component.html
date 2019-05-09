@@ -1,36 +1,45 @@
 <app-navJuegos></app-navJuegos>
 
 <body>
-  <div id="juego">
-    <table class="table">
-      <tr>
-        <td id="0" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="1" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="2" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="3" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-      </tr>
-      <tr>
-        <td id="4" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="5" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="6" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="7" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-      </tr>
-      <tr>
-        <td id="8" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="9" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="10" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="11" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-      </tr>
-      <tr>
-        <td id="12" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="13" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="14" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-        <td id="15" class="letra" onclick="girarMeme()" data-valor="valor">?</td>
-      </tr>
-    </table>
-  </div>
-  <div class="centrar">
-    <input type="button" class="btn" value="Iniciar" onclick="iniciarJuego()" />
-    <input type="button" class="btn" value="Reset" onclick="resetearJuego()" />
-  </div>
+  <mat-card>
+    <mat-card-content>
+      <div class="flex-container text-center">
+        <div class="section-title text-center">
+          <h1>Piedra, Papel o Tijeras</h1>
+        </div>
+        <div class="flex-container text-center" id="juego">
+          <table class="table">
+            <tr>
+              <td id="0" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="1" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="2" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="3" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+            </tr>
+            <tr>
+              <td id="4" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="5" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="6" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="7" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+            </tr>
+            <tr>
+              <td id="8" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="9" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="10" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="11" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+            </tr>
+            <tr>
+              <td id="12" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="13" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="14" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+              <td id="15" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
+            </tr>
+          </table>
+        </div>
+        <div class="flex-container">
+          <button (click)="iniciarJuego()" class="btn"> Iniciar Juego</button>
+          <button (click)="resetearJuego()" class="btn"> Resetear Juego</button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
 </body>
