@@ -1,3 +1,23 @@
-<p>
-  tateti works!
-</p>
+<body>
+  <div class="container text-center">
+    <mat-toolbar color="primary">
+        <div class="page_title text-center mb-4">
+            Tateti
+        </div>
+    </mat-toolbar>
+
+    <h3 *ngIf="!gameOver">Jugador: {{ currentPlayer.name }}</h3>
+    <h3 *ngIf="gameOver && lastWinner == PLAYER_HUMAN">Has Ganado!</h3>
+    <h3 *ngIf="gameOver && lastWinner == PLAYER_COMPUTER">La IA te ha derrotado!</h3>
+    <h3 *ngIf="gameOver && lastWinner == DRAW">Han empatado!</h3>
+
+    <div id="board" [class.locked]="boardLocked || gameOver">
+      <div *ngFor="let square of board" class="square" [class.checked]="square.value != ''"
+        [class.winner]="square.winner" (click)="square_click(this.square)">
+        {{ square.value }}
+      </div>
+    </div>
+
+    <input type="button" value="Jugar Nuevamente" *ngIf="gameOver" (click)="newGame()" />
+  </div>
+</body>

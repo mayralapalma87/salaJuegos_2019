@@ -1,2 +1,30 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+  padding-top:2.2rem;
+  padding-bottom:2.2rem;
+  background:rgba(0, 0, 0, 0.76);
+  background-image: url('src/assets/imagenes/background.png');
+  background-size: 100% 100%;
+  color:#FF5E18;
+}
+p {
+  font-family: Oleo Script;
+  font-weight: 300;
+  font-size: 14px;
+  font-weight: bold;
+  color:#FF5E18;
+  font-style: italic;
+}
+button{
+  background-color:  rgb(0, 0, 0, 0.8);
+  font-size: 22px;
+  font-family: Oleo Script;
+  color:#FF5E18;
+  border-radius: 5%;
+}
+button:hover {
+  background-color:  rgb(128, 0, 64, 0.8);
+  color: #FF5E18;
+}
