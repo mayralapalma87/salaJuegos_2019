@@ -60,6 +60,7 @@ export class MementeComponent implements OnInit {
       dato.dataset.valor = meme;
       this.colorCambio({ posicion: i, color: 'rgb(0, 0, 0, 0.8)', contenido: '?' });
     }
+    document.getElementById('ganaste').style.display = 'none';
     //"<img src='../assets/imagenes/Memes/dino.jpg'>"
   }
 
@@ -81,8 +82,8 @@ export class MementeComponent implements OnInit {
       } else if (this.identificadorJ1 !== this.identificadorJ2) {
         const seconds = interval(1000);
         setTimeout(() => {
-          this.colorCambio({posicion: this.identificadorJ1, color: 'rgb(0, 0, 0, 0.8)', contenido: "?"})
-          this.colorCambio({posicion: this.identificadorJ2, color: 'rgb(0, 0, 0, 0.8)', contenido: "?"})
+          this.colorCambio({posicion: this.identificadorJ1, color: 'rgb(0, 0, 0, 0.8)', contenido: '?'})
+          this.colorCambio({posicion: this.identificadorJ2, color: 'rgb(0, 0, 0, 0.8)', contenido: '?'})
           this.vaciar()
         }, 500);
 
@@ -105,7 +106,7 @@ export class MementeComponent implements OnInit {
       }
     }
     if (aciertos === 16) {
-      document.getElementById('ganaste').innerHTML = 'GANASTE';
+      document.getElementById('ganaste').style.display = 'block';
     }
   }
 
