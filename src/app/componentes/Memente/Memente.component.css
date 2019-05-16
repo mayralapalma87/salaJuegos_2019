@@ -60,21 +60,19 @@ h1::after {
   transform: translate(-50%, -50%);
 }
 #juego {
-  opacity: 0.3;
-  width: 600px;
-  height: 600px;
+  text-align: center;
 }
 
-table {
-  width: 100%;
-  height: 100%;
+ img {
+  width: 100px;
+  height: 100px;
 }
-
 td {
+  text-align: center;
   width: 25%;
   height: 25%;
-  background-color: black;
-  border: 3px solid black;
+  background-color: rgb(0, 0, 0, 0.8);
+  border: 3px solid rgb(0, 0, 0, 0.8);
   border-radius: 5px;
 }
 
@@ -90,6 +88,3 @@ input {
   height: 30px;
 }
 
-.centrar {
-  margin-left: 210px;
-}

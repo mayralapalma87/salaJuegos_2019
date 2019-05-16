@@ -1,1 +1,41 @@
 <app-navJuegos></app-navJuegos>
+
+<body>
+  <div class="flex-container text-center">
+    <div class="section-title text-center">
+      <h1>Anagrama</h1>
+    </div>
+    <div class="container ">
+      <div class="flex-container text-center" style="background: rgb(128, 0, 64, 0.8); border-radius: 5%;">
+        <h4 class="display-4">Hay dos anagramas posibles para esta palabra adivina alguno de los dos</h4>
+      </div>
+      <div class="box">
+        <div *ngFor="let l of desordenada">
+          <p>{{l}}</p>
+        </div>
+      </div>
+      <div class="box">
+        <mat-form-field class="example-full-width">
+          <input #palabra [(ngModel)]="inputPalabra" matInput placeholder="Adivina la palabra...">
+          <button (click)="probarPalabra()"> Probar </button>
+        </mat-form-field>
+      </div>
+
+      <div class="flex-container text-center" *ngIf="adivinaste">
+        <div class="jumbotron jumbotron-fluid" id='jumbotron'>
+          <div class="container">
+            <h2 class="display-4">Muy bien ganaste!</h2>
+          </div>
+        </div>
+
+        <div class="flex-container text-center" *ngIf="fallaste">
+          <div class="jumbotron jumbotron-fluid" id='jumbotron'>
+            <div class="container">
+              <h2 class="display-4">Segui participando!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

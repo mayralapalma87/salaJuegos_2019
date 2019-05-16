@@ -5,10 +5,10 @@
     <mat-card-content>
       <div class="flex-container text-center">
         <div class="section-title text-center">
-          <h1>Piedra, Papel o Tijeras</h1>
+          <h1>Memente</h1>
         </div>
-        <div class="flex-container text-center" id="juego">
-          <table class="table">
+        <div class="table-responsive" id="juego">
+          <table class="table mat-table">
             <tr>
               <td id="0" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
               <td id="1" class="letra" (click)="girarMeme()" data-valor="valor">?</td>
@@ -35,6 +35,7 @@
             </tr>
           </table>
         </div>
+        <div id="ganaste"></div>
         <div class="flex-container">
           <button (click)="iniciarJuego()" class="btn"> Iniciar Juego</button>
           <button (click)="resetearJuego()" class="btn"> Resetear Juego</button>
