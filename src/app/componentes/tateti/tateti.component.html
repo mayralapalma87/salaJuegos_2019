@@ -7,12 +7,12 @@
         <h1>Ta Te Ti</h1>
       </div>
     </mat-toolbar>
-
-    <h3 *ngIf="!gameOver">Jugador: {{ currentPlayer.name }}</h3>
-    <h3 *ngIf="gameOver && lastWinner == PLAYER_HUMAN">Ganaste!</h3>
-    <h3 *ngIf="gameOver && lastWinner == PLAYER_COMPUTER">La IA te ha derrotado!</h3>
-    <h3 *ngIf="gameOver && lastWinner == DRAW">Han empatado!</h3>
-
+    <div class="card-body">
+      <h3 *ngIf="!gameOver">Jugador: {{ currentPlayer.name }}</h3>
+      <h3 *ngIf="gameOver && lastWinner == PLAYER_HUMAN">Ganaste!</h3>
+      <h3 *ngIf="gameOver && lastWinner == PLAYER_COMPUTER">La IA te ha derrotado!</h3>
+      <h3 *ngIf="gameOver && lastWinner == DRAW">Han empatado!</h3>
+    </div>
     <div id="board" [class.locked]="boardLocked || gameOver">
       <div *ngFor="let square of board" class="square" [class.checked]="square.value != ''"
         [class.winner]="square.winner" (click)="square_click(this.square)">
