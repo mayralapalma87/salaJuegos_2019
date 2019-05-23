@@ -58,7 +58,7 @@ export class MementeComponent implements OnInit {
       let meme = this.memes[i].nombre;
       let dato = document.getElementById( i.toString() );
       dato.dataset.valor = meme;
-      this.colorCambio({ posicion: i, color: 'rgb(0, 0, 0, 0.8)', contenido: '?' });
+      this.colorCambio({ posicion: i, color: 'rgb(0, 0, 0, 0.8)', contenido: '<img class="img-fluid" src="./assets/imagenes/Memes/supermario820.jpg" alt="?">' });
     }
     document.getElementById('ganaste').style.display = 'none';
     //"<img src='../assets/imagenes/Memes/dino.jpg'>"
@@ -82,8 +82,8 @@ export class MementeComponent implements OnInit {
       } else if (this.identificadorJ1 !== this.identificadorJ2) {
         const seconds = interval(1000);
         setTimeout(() => {
-          this.colorCambio({posicion: this.identificadorJ1, color: 'rgb(0, 0, 0, 0.8)', contenido: '?'})
-          this.colorCambio({posicion: this.identificadorJ2, color: 'rgb(0, 0, 0, 0.8)', contenido: '?'})
+          this.colorCambio({posicion: this.identificadorJ1, color: 'rgb(0, 0, 0, 0.8)', contenido: '<img class="img-fluid" style="width: 100px height: 100px;" src="./assets/imagenes/Memes/supermario820.jpg" alt="?">'})
+          this.colorCambio({posicion: this.identificadorJ2, color: 'rgb(0, 0, 0, 0.8)', contenido: '<img class="img-fluid" style="width: 100px height: 100px;" src="./assets/imagenes/Memes/supermario820.jpg" alt="?">'})
           this.vaciar()
         }, 500);
 
