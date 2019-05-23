@@ -34,7 +34,7 @@ export class MementeComponent implements OnInit {
 
     colorCambio({ posicion, color, contenido }) {
     document.getElementById(posicion.toString()).style.backgroundColor = color;
-    document.getElementById(posicion.toString()).style.backgroundImage = "url('/assets/imagenes/Memes/"+ contenido + ".png')";
+    document.getElementById(posicion.toString()).style.backgroundImage = "url('./assets/imagenes/Memes/"+ contenido + ".png')";
   }
   vaciar()  {
     this.jugada1 = '';
